@@ -1,6 +1,6 @@
 <?php
 // Include your database connection file
-include("connection.php");
+include("login_connection.php");
 
 // Retrieve the token from the URL
 $token = $_GET["token"];
