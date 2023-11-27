@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    
+    <form id="event-form" action="event.php">
+        <label for="event-title">Event Title:</label>
+        <input type="text" id="event-title" required><br>
+        
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" required><br>
+
+        <label for="event-type">Event Type:</label>
+        <select id="event-type" required>
+            <option value="notice">Notice</option>
+            <option value="video">Video</option>
+            <option value="picture">Picture</option>
+        </select><br>
+
+        <label for="event-file">Event File:</label>
+        <input type="file" id="event-file" required><br>
+
+        <button type="button" onclick="uploadEvent()">Upload Event</button>
+    </form>
+
+    <script src="events.js"></script>
+</body>
+</html>
