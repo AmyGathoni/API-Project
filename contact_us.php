@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 
 
     // Send an email (this is just a basic example)
-    $to = "amygathoni2001@example.com";
+    $to = "testmail@example.com";
     $subject = "New Contact Form Submission";
     $messageBody = "Name: $name\nEmail: $email\n\n$message";
 
